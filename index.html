@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tahani Mahmoud — Data Analyst</title>
+  <meta name="description" content="Cairo-based data analyst. Python, SQL, ETL, and reporting that turn messy source data into decisions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #12201c;
+      --paper: #f4efe4;
+      --card: #fffdf8;
+      --line: #d9d0bf;
+      --muted: #5d675f;
+      --copper: #b5692c;
+      --copper-deep: #8a4c1c;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      line-height: 1.55;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image: radial-gradient(rgba(18, 32, 28, 0.04) 0.8px, transparent 0.8px);
+      background-size: 18px 18px;
+      z-index: 0;
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      width: min(1080px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 0 8px;
+    }
+
+    .mark {
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 0.82rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+    }
+
+    nav a, .btn {
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    nav a {
+      font-size: 0.95rem;
+    }
+
+    nav a:hover { color: var(--copper-deep); }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 40px;
+      align-items: center;
+      padding: 56px 0 36px;
+    }
+
+    .avatar {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 10px 30px rgba(18, 32, 28, 0.12);
+      display: grid;
+      place-items: center;
+      background: #1c2d28;
+      color: var(--paper);
+      font-family: Fraunces, Georgia, serif;
+      font-size: 3.1rem;
+      font-weight: 650;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 1.05;
+      margin: 0 0 12px;
+      font-weight: 650;
+    }
+
+    .lede {
+      font-size: 1.15rem;
+      max-width: 38rem;
+      margin: 0 0 22px;
+      color: var(--muted);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--ink);
+      font-weight: 500;
+    }
+
+    .btn.primary {
+      background: var(--ink);
+      color: var(--paper);
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+
+    section { padding: 28px 0 10px; }
+
+    h2 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.7rem;
+      margin: 0 0 18px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skills span {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 0.92rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    article {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 20px 20px 18px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    article h3 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.25rem;
+      margin: 0 0 8px;
+    }
+
+    article p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      flex: 1;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+
+    .tags span {
+      font-size: 0.78rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--copper-deep);
+    }
+
+    article a {
+      color: var(--copper-deep);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    footer {
+      padding: 48px 0 40px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--line);
+      margin-top: 36px;
+    }
+
+    footer a { color: var(--ink); }
+
+    @media (max-width: 760px) {
+      .hero, .grid { grid-template-columns: 1fr; }
+      header { align-items: flex-start; flex-direction: column; gap: 14px; }
+      .hero { padding-top: 32px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark">Tahani Mahmoud</div>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="Tahani_Mahmoud_Marketing_Data_Analyst_Portfolio.pdf">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/tahani60000-web">GitHub</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="avatar" aria-hidden="true">TM</div>
+      <div>
+        <h1>Data analyst who turns raw sources into decisions.</h1>
+        <p class="lede">I build ETL pipelines, SQL models, and reports in Python and Excel. Based in Cairo. Available for analyst and reporting roles.</p>
+        <div class="actions">
+          <a class="btn primary" href="Tahani_Mahmoud_Marketing_Data_Analyst_Portfolio.pdf">View portfolio PDF</a>
+          <a class="btn" href="https://github.com/tahani60000-web">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="skills">
+        <span>Python</span>
+        <span>SQL</span>
+        <span>Excel</span>
+        <span>ETL</span>
+        <span>Power BI</span>
+        <span>Looker Studio</span>
+        <span>Web scraping</span>
+        <span>APIs</span>
+        <span>Git</span>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2>Selected work</h2>
+      <div class="grid">
+        <article>
+          <div class="tags"><span>SQL</span><span>Excel</span><span>Storytelling</span></div>
+          <h3>Marketing data analyst portfolio</h3>
+          <p>A 37-page case pack: e-commerce customer personality analysis in SQL, purchase and campaign KPIs, and a cookie-store operations study with revenue, cost, and profit.</p>
+          <a href="Tahani_Mahmoud_Marketing_Data_Analyst_Portfolio.pdf">Open the PDF</a>
+        </article>
+        <article>
+          <div class="tags"><span>ETL</span><span>APIs</span><span>Looker Studio</span></div>
+          <h3>HealthSync Engine</h3>
+          <p>Automated pipeline that pulls Renpho and Trainerize data, fuzzy-matches client names, and feeds a Looker Studio dashboard for coaching programs.</p>
+          <a href="https://github.com/tahani60000-web/HealthSync-Engine">View repository</a>
+        </article>
+        <article>
+          <div class="tags"><span>SQL</span><span>CRM</span><span>Excel</span></div>
+          <h3>Pipedrive to Excel</h3>
+          <p>SQL connection between Pipedrive CRM and a spreadsheet that records weekly sales activity per person.</p>
+          <a href="https://github.com/tahani60000-web/-create-an-SQL-connection-between-our-Pipedrive-CRM-and-Excel-Spreadshee">View repository</a>
+        </article>
+        <article>
+          <div class="tags"><span>Python</span><span>Google Drive</span><span>Automation</span></div>
+          <h3>Google Drive Automation</h3>
+          <p>Script to upload or download every file and folder in a Drive directory to or from a local machine.</p>
+          <a href="https://github.com/tahani60000-web/Google-Drive-Automation">View repository</a>
+        </article>
+        <article>
+          <div class="tags"><span>Machine learning</span><span>Python</span></div>
+          <h3>Diabetes prediction</h3>
+          <p>Model that estimates diabetes risk from health measures such as age, BMI, blood pressure, glucose, and family history.</p>
+          <a href="https://github.com/tahani60000-web/Diabetes-Prediction-Model">View repository</a>
+        </article>
+        <article>
+          <div class="tags"><span>Clustering</span><span>Python</span></div>
+          <h3>Mall customer segmentation</h3>
+          <p>Unsupervised learning to group shoppers by behaviour and demographics for clearer marketing segments.</p>
+          <a href="https://github.com/tahani60000-web/Mall-Customer-Segmentation">View repository</a>
+        </article>
+        <article>
+          <div class="tags"><span>Scraping</span><span>JavaScript sites</span></div>
+          <h3>JS-heavy web scraping</h3>
+          <p>Extraction work on sites that render in the browser rather than in static HTML.</p>
+          <a href="https://github.com/tahani60000-web/web-scraping-of-js-heavy-websites-">View repository</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p class="lede">I work as a data analyst and Python developer: extract, clean, join, and present data so a business team can act on it. I care about data quality, clear charts, and handing over work other people can rerun.</p>
+    </section>
+
+    <footer>
+      <div>Cairo, Egypt</div>
+      <div>
+        <a href="https://github.com/tahani60000-web">GitHub</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
