@@ -1,18 +1,17 @@
 ### Hi, I am Tahani Mahmoud
 
-Data analyst and Python developer in Cairo. I build ETL pipelines, SQL models, and reports that turn raw sources into decisions.
+Web scraping expert in Egypt. I build Python systems for sites that block ordinary scrapers: Cloudflare, login portals, JS pages, and hidden APIs.
 
-**Python · SQL · Excel · ETL · Power BI · Looker Studio · Web scraping · APIs · Git**
+**Python · Scrapy · Playwright · Selenium · FastAPI · PostgreSQL · MongoDB · AWS · Docker**
 
 Portfolio: https://tahani60000-web.github.io/  
+Upwork: https://www.upwork.com/freelancers/~0139f950370872ad41  
 GitHub: https://github.com/tahani60000-web
 
 ### Selected work
 
-- **Marketing data analyst portfolio** — e-commerce customer analysis in SQL, campaign KPIs, and a store operations study.
-- **HealthSync Engine** — Renpho and Trainerize pipeline into Looker Studio.
-- **Pipedrive to Excel** — weekly sales activity from CRM into a spreadsheet.
-- **Google Drive Automation** — upload or download a full Drive folder.
-- **Diabetes prediction** — risk model from age, BMI, blood pressure, glucose, and family history.
-- **Mall customer segmentation** — unsupervised groups for clearer marketing.
-- **JS-heavy web scraping** — extraction from sites that render in the browser.
+- **Lost website images** — recovered a publisher's image library from public web archives.
+- **AI training data** — SRU/HTTP scrape cleaned and uploaded to Hugging Face.
+- **Etimad tender archive** — scheduled daily capture from the Saudi procurement portal.
+- **Playwright tuning** — fixed timeouts and sped up an existing automation.
+- **Shopify catalog scrape** — product scrape and data-management workflow.

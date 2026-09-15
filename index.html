@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tahani Mahmoud — Data Analyst</title>
-  <meta name="description" content="Cairo-based data analyst. Python, SQL, ETL, and reporting that turn messy source data into decisions.">
+  <title>Tahani Mahmoud — Web Scraping Expert</title>
+  <meta name="description" content="Python web scraping for sites that block ordinary scrapers. Scheduled pipelines, clean data, 18 Upwork projects, Top Rated.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -207,6 +207,15 @@
       text-decoration: none;
     }
 
+    .how {
+      margin: 0;
+      padding-left: 1.2rem;
+      color: var(--muted);
+      max-width: 40rem;
+    }
+
+    .how li { margin-bottom: 8px; }
+
     footer {
       padding: 48px 0 40px;
       color: var(--muted);
@@ -233,7 +242,6 @@
       <div class="mark">Tahani Mahmoud</div>
       <nav>
         <a href="#work">Work</a>
-        <a href="Tahani_Mahmoud_Marketing_Data_Analyst_Portfolio.pdf">Portfolio</a>
         <a href="#about">About</a>
         <a href="https://github.com/tahani60000-web">GitHub</a>
         <a href="https://www.upwork.com/freelancers/~0139f950370872ad41">Upwork</a>
@@ -243,12 +251,11 @@
     <section class="hero">
       <div class="avatar" aria-hidden="true">TM</div>
       <div>
-        <h1>Data analyst who turns raw sources into decisions.</h1>
-        <p class="lede">I build ETL pipelines, SQL models, and reports in Python and Excel. Based in Cairo. Available for analyst and reporting roles.</p>
+        <h1>Web scraping expert for sites that block ordinary scrapers.</h1>
+        <p class="lede">Most scraping jobs fail on page 40,000 — the layout changes, IPs get blocked, a captcha appears. I build the Python systems that keep running: Cloudflare and DataDome sites, login portals, JS pages, and hidden APIs. 18 Upwork projects. Top Rated. 100% Job Success.</p>
         <div class="actions">
-          <a class="btn primary" href="Tahani_Mahmoud_Marketing_Data_Analyst_Portfolio.pdf">View portfolio PDF</a>
+          <a class="btn primary" href="https://www.upwork.com/freelancers/~0139f950370872ad41">Hire on Upwork</a>
           <a class="btn" href="https://github.com/tahani60000-web">GitHub</a>
-          <a class="btn" href="https://www.upwork.com/freelancers/~0139f950370872ad41">Upwork</a>
         </div>
       </div>
     </section>
@@ -256,14 +263,17 @@
     <section>
       <div class="skills">
         <span>Python</span>
-        <span>SQL</span>
-        <span>Excel</span>
-        <span>ETL</span>
-        <span>Power BI</span>
-        <span>Looker Studio</span>
-        <span>Web scraping</span>
-        <span>APIs</span>
-        <span>Git</span>
+        <span>Scrapy</span>
+        <span>Playwright</span>
+        <span>Selenium</span>
+        <span>BeautifulSoup</span>
+        <span>FastAPI</span>
+        <span>PostgreSQL</span>
+        <span>MongoDB</span>
+        <span>AWS</span>
+        <span>Docker</span>
+        <span>REST APIs</span>
+        <span>Proxy rotation</span>
       </div>
     </section>
 
@@ -285,51 +295,31 @@
           <a href="https://github.com/tahani60000-web/Dutch-BasisWettenBestand-BWB-to-HuggingFace">View repository</a>
         </article>
         <article>
+          <div class="tags"><span>Python</span><span>Playwright</span><span>Automation</span></div>
+          <h3>Playwright performance tuning</h3>
+          <p>A client's Playwright job kept timing out before it finished. I found the slow waits, blocked unused assets, reused browser contexts, and added controlled concurrency so the run completed without getting blocked.</p>
+          <a href="https://github.com/tahani60000-web/fast-appointment-bot-playwright">View repository</a>
+        </article>
+        <article>
+          <div class="tags"><span>Scraping</span><span>Etimad</span><span>Scheduled jobs</span></div>
+          <h3>Etimad automated tender archive</h3>
+          <p>Built an automated archive for Etimad, the Saudi procurement portal, with scheduled daily runs so new tenders are captured without manual checks.</p>
+        </article>
+        <article>
+          <div class="tags"><span>Shopify</span><span>ETL</span><span>E-commerce</span></div>
+          <h3>Shopify product scrape and data workflow</h3>
+          <p>Rebuilt a Shopify product scrape and data-management workflow so catalog data stayed clean and usable after each run.</p>
+        </article>
+        <article>
           <div class="tags"><span>Python</span><span>Solana</span><span>Automation</span></div>
           <h3>Solana copy trading bot</h3>
           <p>Real-time bot that watches target wallets on Solana and mirrors their trades on the client's account. Configurable filters, position sizing, action logs, and reconnection handling so one failed transaction does not stall the run.</p>
           <a href="https://www.upwork.com/freelancers/~0139f950370872ad41?p=2093227764959981568">View on Upwork</a>
         </article>
         <article>
-          <div class="tags"><span>SQL</span><span>Excel</span><span>Storytelling</span></div>
-          <h3>Marketing data analyst portfolio</h3>
-          <p>A 37-page case pack: e-commerce customer personality analysis in SQL, purchase and campaign KPIs, and a cookie-store operations study with revenue, cost, and profit.</p>
-          <a href="Tahani_Mahmoud_Marketing_Data_Analyst_Portfolio.pdf">Open the PDF</a>
-        </article>
-        <article>
-          <div class="tags"><span>ETL</span><span>APIs</span><span>Looker Studio</span></div>
-          <h3>HealthSync Engine</h3>
-          <p>Automated pipeline that pulls Renpho and Trainerize data, fuzzy-matches client names, and feeds a Looker Studio dashboard for coaching programs.</p>
-          <a href="https://github.com/tahani60000-web/HealthSync-Engine">View repository</a>
-        </article>
-        <article>
-          <div class="tags"><span>SQL</span><span>CRM</span><span>Excel</span></div>
-          <h3>Pipedrive to Excel</h3>
-          <p>SQL connection between Pipedrive CRM and a spreadsheet that records weekly sales activity per person.</p>
-          <a href="https://github.com/tahani60000-web/-create-an-SQL-connection-between-our-Pipedrive-CRM-and-Excel-Spreadshee">View repository</a>
-        </article>
-        <article>
-          <div class="tags"><span>Python</span><span>Google Drive</span><span>Automation</span></div>
-          <h3>Google Drive Automation</h3>
-          <p>Script to upload or download every file and folder in a Drive directory to or from a local machine.</p>
-          <a href="https://github.com/tahani60000-web/Google-Drive-Automation">View repository</a>
-        </article>
-        <article>
-          <div class="tags"><span>Machine learning</span><span>Python</span></div>
-          <h3>Diabetes prediction</h3>
-          <p>Model that estimates diabetes risk from health measures such as age, BMI, blood pressure, glucose, and family history.</p>
-          <a href="https://github.com/tahani60000-web/Diabetes-Prediction-Model">View repository</a>
-        </article>
-        <article>
-          <div class="tags"><span>Clustering</span><span>Python</span></div>
-          <h3>Mall customer segmentation</h3>
-          <p>Unsupervised learning to group shoppers by behaviour and demographics for clearer marketing segments.</p>
-          <a href="https://github.com/tahani60000-web/Mall-Customer-Segmentation">View repository</a>
-        </article>
-        <article>
           <div class="tags"><span>Scraping</span><span>JavaScript sites</span></div>
           <h3>JS-heavy web scraping</h3>
-          <p>Extraction work on sites that render in the browser rather than in static HTML.</p>
+          <p>Extraction from sites that render in the browser rather than in static HTML — the pages ordinary scrapers miss.</p>
           <a href="https://github.com/tahani60000-web/web-scraping-of-js-heavy-websites-">View repository</a>
         </article>
       </div>
@@ -337,11 +327,19 @@
 
     <section id="about">
       <h2>About</h2>
-      <p class="lede">I work as a data analyst and Python developer: extract, clean, join, and present data so a business team can act on it. I care about data quality, clear charts, and handing over work other people can rerun.</p>
+      <p class="lede">I deliver scheduled pipelines with monitoring, retries, and alerts — not one-off scripts. Data lands clean in PostgreSQL, MongoDB, S3, Google Sheets, or CSV, with code your team can maintain.</p>
+      <p class="lede">I work with AI teams building training data and RAG pipelines, e-commerce teams tracking prices and catalogs, and research, real estate, and recruitment teams that need alternative data.</p>
+      <h2>How I work</h2>
+      <ol class="how">
+        <li>You send the target URLs and the exact fields you need.</li>
+        <li>I test feasibility and tell you whether it is possible, and what it costs, before you commit.</li>
+        <li>You get a sample batch so you can check the data is right.</li>
+        <li>Then the full build: scheduled runs, monitoring, documentation, handover.</li>
+      </ol>
     </section>
 
     <footer>
-      <div>Cairo, Egypt</div>
+      <div>Daruit, Egypt</div>
       <div>
         <a href="https://www.upwork.com/freelancers/~0139f950370872ad41">Upwork</a>
         ·
